@@ -1,0 +1,18 @@
+@import "./vars.scss";
+@import "./functions.scss";
+@import "./animations.scss";
+
+// @font-face {
+//   font-family: "BubblegumSans-Regular";
+//   // src: url('../assets/BubblegumSans-Regular.ttf');
+//   src: url("../assets/BubblegumSans-Regular.ttf");
+// }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
