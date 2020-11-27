@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-Code 
+Code here
 <?php get_footer(); ?>

@@ -1,4 +1,8 @@
 <?php
+
+require_once('includes/bs4navwalker-master/bs4navwalker.php');
+
+
 function register_my_menus() {
   register_nav_menus(
     array(
@@ -9,7 +13,7 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 function add_theme_scripts() {
- wp_enqueue_style( 'wpromote', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0', 'all');
+ wp_enqueue_style( 'cc85', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0', 'all');
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
