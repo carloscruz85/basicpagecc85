@@ -28,7 +28,7 @@ add_action('wp_enqueue_scripts', 'include_custom_jquery');
 
 add_theme_support( 'post-thumbnails' );
 
-function get_image_g( $id , $cover = 'none') {
+function get_image_g( $id , $cover = 'null') {
 	// echo $cover;
 	if (has_post_thumbnail( $id ) ):
 	   $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'single-post-thumbnail' );
@@ -38,4 +38,28 @@ function get_image_g( $id , $cover = 'none') {
  	endif;
 }
 
+
+function getImg($name)
+{
+	return  get_template_directory_uri() . '/assets/media/' . $name;
+}
+
+function x($d){
+  ?>
+  <pre>
+    <?php print_r($d) ?>
+  </pre>
+  <?php
+}
+
+function pagination_nav() {
+    global $wp_query;
+
+    if ( $wp_query->max_num_pages > 1 ) { ?>
+        <nav class="pagination" role="navigation">
+            <div class="nav-previous"><?php next_posts_link( '&larr; Older posts' ); ?></div>
+            <div class="nav-next"><?php previous_posts_link( 'Newer posts &rarr;' ); ?></div>
+        </nav>
+<?php }
+}
  ?>

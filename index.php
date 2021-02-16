@@ -1,3 +1,4 @@
-<?php get_header(); ?>
-Code here
-<?php get_footer(); ?>
+<?php
+get_header();
+
+get_footer();

@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: side content
+* Template Name: Full Width
 *
 * @package WordPress
 * @subpackage Twenty_Fourteen
@@ -10,10 +10,7 @@
  get_header(); ?>
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-6">
-      <img src="<?php echo get_image_g(get_the_ID()) ?>" alt="<?php echo get_the_title() ?>">
-    </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12">
       <h1 class="text-center color-white"><?php echo get_the_title() ?></h1>
 <div class="text-read">
   <?php
