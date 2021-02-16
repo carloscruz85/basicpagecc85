@@ -1,18 +1,106 @@
 @import "./vars.scss";
 @import "./functions.scss";
 @import "./animations.scss";
-
+@import "./_nav.scss";
 // @font-face {
 //   font-family: "BubblegumSans-Regular";
 //   // src: url('../assets/BubblegumSans-Regular.ttf');
 //   src: url("../assets/BubblegumSans-Regular.ttf");
 // }
 
+
 * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+body{
+  // @include back-image();
+  background-image: url('../media/up.jpg');
+  font-family: 'Barlow Condensed', sans-serif !important;
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+   color: $yellow !important;
+   letter-spacing: 0.15rem;
+
+}
+
+pre{
+  color: $yellow !important;
+}
+
+
+.color-white{
+  color: white !important;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.text-read{
+  color: #dedede;
+}
+
+video{
+  margin: 5rem 0;
+  width: 100%;
+  height: auto;
+  // // z-index: 1000 !important;
+  // // position: absolute;
+  // // top: 0;
+  // // left: 0;
+  // width: auto;
+  //
+  // @include multi( height, auto, auto, 100vh, 100vh);
+  // @include multi( width, 100vw, 100vw, auto, auto);
+}
+
+
+.title{
+  font-size: 1rem;
+  color: $yellow;
+  transition: color;
+  transition-duration: 0.3s;
+  &:hover{
+    color: $yellow * 0.5;
+    text-decoration: none;
+  }
+  a{
+    color: $yellow;
+  }
+}
+
+.pagination{
+  // border: 1px solid red;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: $yellow;
+  .item{
+    cursor: pointer;
+    border: 1px solid #d7a21f;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color;
+    transition-duration: 0.3s;
+    &:hover{
+      background-color: $yellow;
+      a{
+        color: black;
+      }
+    }
+
+  }
+  a{
+    color: $yellow;
+    // transition: color;
+    // transition-duration: 0.3s;
+    :hover{
+        // color: $yellow * 0.5;
+    }
+  }
 }
